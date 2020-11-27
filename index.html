@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <a href=" " class="logo"> <span style="color: black;">CLASSY</span><span style="color: aqua ;">ADS</span> </a>
+            <div class="menu-toggle"></div>
+
+            <nav>
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Ads</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Blog</a></li>
+                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#">|  Login</a></li>
+                    <li> <a href="#">Register</a></li>
+                    <li> <a href="#" class="active">+ Post an Ad</a></li>
+
+                </ul>
+            </nav>
+            <div class="clearfix">
+
+            </div>
+        </header>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.menu-toggle').click(function() {
+                    $('.menu-toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
+    </div>
+
+</body>
+
+</html>
