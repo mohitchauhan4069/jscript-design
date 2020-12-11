@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        /* background-color: cornflowerblue;*/
+    }
+    
+    .maincontainer {
+        padding: 0;
+        margin-top: -20px;
+        background: url("/images/girl.jpg");
+        height: 800px;
+        width: 100%;
+        background-size: cover;
+    }
+    
+    header {
+        position: relative;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #ffff;
+        box-sizing: border-box;
+        border-radius: 5px;
+        box-shadow: 0 4px 5px rgba(red, green, blue, alpha);
+    }
+    
+    .logo {
+        height: 40px;
+        font-size: 35px;
+        background: rgb(252, 250, 250);
+        line-height: 50px;
+        padding: 7px 5px;
+        text-align: center;
+        box-sizing: border-box;
+        float: left;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    nav {
+        float: right;
+    }
+    
+    .clearfix {
+        clear: both;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        list-style: none;
+    }
+    
+    nav ul li a {
+        color: black;
+        display: block;
+        margin: 10px 0;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: aqua;
+        color: #ffff;
+        transition: 0.5s;
+    }
+    
+    @media (max-width:1200px) {
+        header {
+            margin: 20px;
+        }
+    }
+    
+    @media (max-width:768px) {
+        .menu-toggle {
+            display: block;
+            margin: 10px;
+            height: 40px;
+            width: 40px;
+            background: #ccc;
+            cursor: pointer;
+            float: right;
+            text-align: center;
+            font-size: 30px;
+        }
+        .menu-toggle:before {
+            content: '\f0c9';
+            font-family: fontAwesome;
+            line-height: 40px;
+        }
+        .menu-toggle:before {
+            content: '\f00d';
+            line-height: 40px;
+        }
+        nav {
+            display: none;
+        }
+        nav.active {
+            display: block;
+            width: 100%;
+        }
+        nav.active ul {
+            display: block;
+        }
+    }
+    
+    .parents {
+        width: 80vw;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        transition: all 0.2 linear;
+        background-color: rgb(241, 248, 247);
+        position: absolute;
+        margin: -50px 10% 0px 10%;
+        border-radius: 12px;
+    }
+    
+    .child {
+        color: black;
+        height: 140px;
+        flex: 1 1 155px;
+        margin: 0.5px;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 8px;
+        padding: 20px;
+    }
+    
+    .child:hover {
+        background-color: aqua;
+        color: rgb(8, 8, 8);
+    }
+    
+    .child i {
+        color: black;
+    }
+    
+    .btn1 {
+        height: 25px;
+        width: 60px;
+        border-radius: 15px;
+        background-color: aquamarine;
+        border: none;
+        outline: none;
+    }
+    
+    @media (max-width: 768px) {
+        .grand_parent {
+            height: auto;
+            width: 100%;
+        }
+    }
+    
+    .child:hover {
+        transform: translateY(-20px);
+    }
+    
+    h1 {
+        font-size: 4rem;
+        padding: 20px 0;
+        text-align: center;
+        color: #000;
+    }
+    
+    p {
+        text-align: center;
+    }
+    
+    .p1 {
+        font-size: 18px;
+    }
+</style>
+
+<body>
+
+    <div class="maincontainer">
+
+        <div class="header">
+            <header>
+                <a href=" " class="logo"><span style="color: black;">CLASSY</span><span style="color: aqua ;">ADS</span></a>
+                <div class="menu-toggle"></div>
+                <nav>
+                    <ul>
+                        <li> <a href="#">Home</a></li>
+                        <li> <a href="#">Ads</a></li>
+                        <li> <a href="#">About</a></li>
+                        <li> <a href="#">Blog</a></li>
+                        <li> <a href="#">Contact</a></li>
+                        <li> <a href="#">|  Login</a></li>
+                        <li> <a href="#">Register</a></li>
+                        <li> <a href="#" class="active">+ Post an Ad</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </header>
+        </div>
+
+
+    </div>
+    <div class="parents">
+        <div class="child">
+            <i class="fa fa-building" aria-hidden="true"></i>
+            <p class="p1">Real State</p>
+            <button class="btn1">4356</button>
+        </div>
+        <div class="child">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <p class="p1">Book & Magzine</p>
+            <button class="btn1">345</button>
+        </div>
+        <div class="child">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <p class="p1">Furniture</p>
+            <button class="btn1">345</button>
+        </div>
+        <div class="child">
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            <p class="p1">Electronics</p>
+            <button class="btn1">345</button>
+        </div>
+        <div class="child">
+            <i class="fa fa-car" aria-hidden="true"></i>
+            <p class="p1">Car & Vehicle</p>
+            <button class="btn1">345</button>
+        </div>
+        <div class="child">
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+            <p class="p1">Other</p>
+            <button class="btn1">335</button>
+        </div>
+    </div>
+</body>
+
+</html>

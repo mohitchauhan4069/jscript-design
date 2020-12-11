@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .grand_parent {
+            width: 100vw;
+            height: 100vh;
+            background: #dfe6e9;
+            color: rgb(24, 17, 17);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            padding: 20px 0;
+            text-align: center;
+            color: #30e3ca;
+        }
+        
+        .parents {
+            width: 80vw;
+            height: auto;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            transition: all 0.2 linear;
+        }
+        
+        .child {
+            height: 500px;
+            /* box-shadow: 0 0 20px #bac3c3; */
+            flex: 1 1 340px;
+            margin: 10px;
+        }
+        
+        .child img {
+            height: 200px;
+            width: 378px;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .grand_parent {
+                height: auto;
+            }
+        }
+        
+        #a11 {
+            text-align: center;
+            font-size: 20px;
+            color: #000;
+        }
+        
+        .childbutton {
+            position: relative;
+        }
+        
+        .childbutton button {
+            border-radius: 2px;
+            size: 26px;
+            background-color: #30e3ca;
+            padding-top: 0.5rem!important;
+            padding-bottom: 0.5rem!important;
+            padding-left: 1.5rem!important;
+            padding-right: 1.5rem!important;
+            font-size: 400;
+            text-align: center;
+            vertical-align: middle;
+            display: flex;
+        }
+        
+        .newsletter {
+            margin-top: 50px;
+            background-color: #30e3ca;
+            height: 22vh;
+            display: flex;
+        }
+        
+        .newsletter1 {
+            color: white;
+            width: 80vw;
+            padding-top: 3rem!important;
+            padding-bottom: 2.5rem!important;
+            padding-left: 9.5rem!important;
+            flex: 1 1 340px;
+            /* padding-right: 5.5rem!important; */
+        }
+        
+        #subscribebutton {
+            border-radius: 2px;
+            background-color: white;
+            padding-top: 0.5rem!important;
+            padding-bottom: 0.5rem!important;
+            padding-left: 1.5rem!important;
+            padding-right: 1.5rem!important;
+            font-size: 400;
+        }
+        
+        #subscribebutton:hover {
+            color: white;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grand_parent">
+        <h1>Our Blog</h1>
+        <p id="a11">See Our Daily News & Update</p>
+        <div class="parents">
+            <div class="child">
+                <img src="/images/shake.jpg" alt="">
+                <br>
+                <br>
+                <br>
+                <h4> Many People Selling Online</h2><br>
+                    <p> By Mark Spiker . Jan 18, 2020 . <a href="http://">New </a></p>
+                    </p><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore fuga magni eligendi odit reprehenderit voluptatibus recusandae blanditiis odio. Obcaecati, deserunt ducimus maxime asperiores id minus ratione a voluptas
+                    laudantium.
+            </div>
+            <div class="child">
+                <img src="/images/shake.jpg" alt="">
+                <br>
+                <br>
+                <br>
+                <h4> Many People Selling Online</h2>
+                    <br>
+                    <p> By Mark Spiker . Jan 18, 2020 . <a href="http://"> New </a></p>
+                    </p><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, enim non atque mollitia hic quae facilis similique nemo accusantium ipsa, voluptatem est labore veritatis perferendis molestiae earum eos. Blanditiis, at.
+            </div>
+            <div class="child">
+                <img src="/images/shake.jpg" alt="">
+                <br>
+                <br>
+                <br>
+                <h4> Many People Selling Online</h2>
+                    <br>
+                    <p> By Mark Spiker . Jan 18, 2020 .
+                        <a href="http://"> New </a></p>
+                    <br>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        <p> Eligendi dolore repellendus iusto porro deleniti minus sequi nobis
+                            <p> recusandae voluptate quo voluptates nihil cumque provident, esse magni
+                                <p> dolorum quaerat quibusdam libero?
+            </div>
+            <div class="childbutton">
+                <button>View All Posts</button>
+            </div>
+        </div>
+        <div class="newsletter">
+            <div class="newsletter1">
+                <p>News Letter</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur.
+                </p>
+            </div>
+            <div class="newsletter1">
+                <br> Email
+                <P>__________________________________________<button id="subscribebutton">Subscribe</button></P>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

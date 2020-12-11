@@ -110,3 +110,73 @@ nav ul li a:hover {
     text-align: center;
     color: #fff;
 }
+
+
+/* hover card up case*/
+
+p {
+    text-align: center;
+}
+
+.p1 {
+    font-size: 18px;
+}
+
+.grand_parent {
+    width: 80vw;
+    background: whitesmoke;
+    margin: auto;
+}
+
+.parents {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    margin-top: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.2 linear;
+    background-color: rgb(241, 248, 247);
+    margin-top: 200px;
+}
+
+.child {
+    color: black;
+    height: 140px;
+    flex: 1 1 155px;
+    margin: 0.5px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.child:hover {
+    background-color: aqua;
+    color: rgb(8, 8, 8);
+}
+
+.child i {
+    color: black;
+}
+
+.btn1 {
+    height: 25px;
+    width: 60px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .grand_parent {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.child:hover {
+    transform: translateY(-20px);
+}
