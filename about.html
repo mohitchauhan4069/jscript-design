@@ -19,15 +19,8 @@
         .grand_parent {
             width: 100vw;
             height: 100vh;
-            background: #dfe6e9;
+            background: #0e1416;
             color: #fff;
-        }
-        
-        h1 {
-            font-size: 4rem;
-            padding: 20px 0;
-            text-align: center;
-            color: #000;
         }
         
         .parents {
@@ -41,11 +34,13 @@
         }
         
         .child {
-            height: 200px;
-            background: #81ecec;
-            box-shadow: 0 0 20px #bac3c3;
-            flex: 1 1 280px;
+            color: white;
+            height: 300px;
+            /* background: #81ecec; */
+            box-shadow: 0 0 10px #bac3c3;
+            flex: 1 1 285px;
             margin: 2px;
+            margin-top: 100px;
         }
         
         @media (max-width: 768px) {
@@ -53,28 +48,61 @@
                 height: auto;
             }
         }
+        
+        .child p {
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        .child i {
+            margin: 10px;
+            padding: 10px;
+            color: white;
+        }
+        
+        #searchbutton {
+            padding: 7px;
+            margin: 0;
+        }
+        
+        #searchbutton1 {
+            height: 35px;
+            width: 55px;
+            background-color: #30e3ca;
+        }
     </style>
 </head>
 
 <body>
     <div class="grand_parent">
-        <h1> Services </h1>
+
         <div class="parents">
             <div class="child">
                 <p>About</p>
+                <p>Lorem ipsum dolor sit amet consectetur elit.</p>
+                <p>Tempora quia rem magni nisi. Omnis, possimus?</p>
             </div>
             <div class="child">
                 <p>Navigations</p>
+                <p>About Us</p>
+                <p>Services</p>
+                <p>Testinomoials</p>
+                <p>Contact Us</p>
             </div>
             <div class="child">
                 <p>Follow Us</p>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </div>
             <div class="child">
-                <p>Follow Us</p>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <br>
+                <br>
+                <br>
+                <input type="text" placeholder="Search Product......" name="searchbutton" id="searchbutton"><button id="searchbutton1">Search</button>
             </div>
+
         </div>
     </div>
 </body>
