@@ -33,7 +33,7 @@
             transition: all 0.2 linear;
         }
         
-        .child {
+        .child2 {
             color: white;
             height: 300px;
             /* background: #81ecec; */
@@ -46,15 +46,17 @@
         @media (max-width: 768px) {
             .grand_parent {
                 height: auto;
+                margin: 0;
+                padding: 0;
             }
         }
         
-        .child p {
-            margin: 10px;
+        .child2 p {
+            /* margin: 10px; */
             padding: 10px;
         }
         
-        .child i {
+        .child2 i {
             margin: 10px;
             padding: 10px;
             color: white;
@@ -66,9 +68,22 @@
         }
         
         #searchbutton1 {
-            height: 35px;
+            height: 36px;
             width: 55px;
             background-color: #30e3ca;
+        }
+        
+        .child2 a:hover {
+            color: #fff;
+        }
+        
+        #hr2 {
+            width: 80vw;
+            margin: auto;
+        }
+        
+        #last-line {
+            text-align: center;
         }
     </style>
 </head>
@@ -77,26 +92,26 @@
     <div class="grand_parent">
 
         <div class="parents">
-            <div class="child">
+            <div class="child2">
                 <p>About</p>
                 <p>Lorem ipsum dolor sit amet consectetur elit.</p>
                 <p>Tempora quia rem magni nisi. Omnis, possimus?</p>
             </div>
-            <div class="child">
+            <div class="child2">
                 <p>Navigations</p>
                 <p>About Us</p>
                 <p>Services</p>
                 <p>Testinomoials</p>
                 <p>Contact Us</p>
             </div>
-            <div class="child">
+            <div class="child2">
                 <p>Follow Us</p>
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </div>
-            <div class="child">
+            <div class="child2">
                 <br>
                 <br>
                 <br>
@@ -104,6 +119,16 @@
             </div>
 
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr id="hr2">
+        <br>
+        <p id="last-line">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2020 All Right Reserved | This Template made with <i class="fa fa-heart" aria-hidden="true"></i> by Colorib. </p>
     </div>
 </body>
 
